@@ -1,0 +1,6 @@
+
+
+gcloud auth login
+gsutil defacl ch -u AllUsers:R gs://test-cp100-18-07
+cd path
+gsutil rsync -R . gs://bucket
